@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary Meta Tags -->
+  <!-- EDIT: Replace with your actual name and preferred title -->
+  <title>Darshan — Aspiring ML Engineer & B.Tech AI Student</title>
+  <meta name="title" content="Darshan — Aspiring ML Engineer & B.Tech AI Student">
+  <meta name="description" content="Forward-looking personal portfolio and learning roadmap of an aspiring Machine Learning Engineer and prospective B.Tech AI student.">
+  <meta name="keywords" content="Machine Learning, AI, Software Engineering, Python, PyTorch, Data Structures, Portfolio, B.Tech AI">
+  <meta name="author" content="Darshan">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Darshan — Aspiring ML Engineer & B.Tech AI Student">
+  <meta property="og:description" content="Forward-looking personal portfolio, evolving competencies, and project blueprints.">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       Site Header / Navigation Bar
+       ========================================================================== -->
+  <header class="site-header" id="header">
+    <div class="container nav-container">
+      
+      <!-- Brand / Logo -->
+      <a href="#hero" class="brand-logo" aria-label="Home">
+        <div class="logo-icon">D</div>
+        <span>Darshan<span style="color: var(--accent-primary)">.dev</span></span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Learning Tree</a>
+        <a href="#projects" class="nav-link">Projects & Specs</a>
+        <a href="#notes" class="nav-link">Field Notes</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Right Action Controls -->
+      <div class="nav-actions">
+        <!-- Resume Link -->
+        <a href="resume.html" target="_blank" rel="noopener" class="btn btn-outline btn-sm">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="16" y1="13" x2="8" y2="13"></line>
+            <line x1="16" y1="17" x2="8" y2="17"></line>
+            <polyline points="10 9 9 9 8 9"></polyline>
+          </svg>
+          <span>Resume</span>
+        </a>
+
+        <!-- Dark / Light Theme Toggle -->
+        <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle light/dark theme">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+
+        <!-- Mobile Drawer Menu Toggle Button -->
+        <button class="mobile-menu-btn" id="mobile-menu-toggle" aria-label="Open Navigation Menu" aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       1. Hero Section
+       ========================================================================== -->
+  <section class="section hero-section" id="hero">
+    <div class="container hero-grid">
+      
+      <!-- Left Column: Bio & Core Pitch -->
+      <div class="hero-content">
+        
+        <!-- Live Status Pill -->
+        <div class="hero-status">
+          <span class="status-dot"></span>
+          <span>Prospective B.Tech AI Student &bull; Early Engineering Journey</span>
+        </div>
+
+        <!-- Main Headline -->
+        <!-- EDIT: Update your name or tagline -->
+        <h1 class="hero-title">
+          Hi, I'm <span class="gradient-text">Darshan</span>.
+        </h1>
+        
+        <div class="hero-role">
+          <span>&gt; Aspiring ML Engineer &amp; Software Developer</span>
+        </div>
+
+        <p class="hero-desc">
+          Building strong foundations at the intersection of <strong>computational mathematics</strong>, 
+          <strong>data structures</strong>, and <strong>practical machine learning systems</strong>. 
+          Focused on understanding how things work under the hood and engineering software that solves real problems.
+        </p>
+
+        <!-- Hero Actions -->
+        <div class="hero-cta-group">
+          <a href="#projects" class="btn btn-primary">
+            <span>Explore Blueprints &amp; Work</span>
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+          <a href="resume.html" target="_blank" rel="noopener" class="btn btn-secondary">
+            <span>View Resume</span>
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <span>Get in Touch</span>
+          </a>
+        </div>
+
+        <!-- Social Quick Bar -->
+        <div class="hero-social-row">
+          <span class="hero-social-label">Find me on:</span>
+          
+          <!-- EDIT: Update your social URLs -->
+          <a href="https://github.com" target="_blank" rel="noopener" class="social-link-btn">
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            <span>GitHub</span>
+          </a>
+
+          <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-link-btn">
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            <span>LinkedIn</span>
+          </a>
+
+          <a href="mailto:darshan@example.com" class="social-link-btn">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            <span>Email</span>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Right Column: Interactive Code Snapshot -->
+      <div class="hero-code-card">
+        <div class="terminal-header">
+          <div class="terminal-dots">
+            <span class="terminal-dot dot-red"></span>
+            <span class="terminal-dot dot-yellow"></span>
+            <span class="terminal-dot dot-green"></span>
+          </div>
+          <span class="terminal-title">developer_profile.py</span>
+          <span></span>
+        </div>
+        <div class="terminal-body">
+          <p><span class="code-comment"># Current technical profile &amp; trajectory</span></p>
+          <p><span class="code-keyword">class</span> <span class="code-var">EngineerInProgress</span>:</p>
+          <p>&nbsp;&nbsp;<span class="code-var">name</span> = <span class="code-str">"Darshan"</span></p>
+          <p>&nbsp;&nbsp;<span class="code-var">program</span> = <span class="code-str">"B.Tech in Artificial Intelligence"</span></p>
+          <p>&nbsp;&nbsp;<span class="code-var">status</span> = <span class="code-str">"Building Core Math &amp; Coding Foundations"</span></p>
+          <br>
+          <p>&nbsp;&nbsp;<span class="code-var">current_focus</span> = [</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-str">"Data Structures &amp; Algorithms"</span>,</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-str">"Applied Linear Algebra &amp; Calculus"</span>,</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-str">"Python &amp; C++ Systems Programming"</span>,</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-str">"ML Pipeline Architecture"</span></p>
+          <p>&nbsp;&nbsp;]</p>
+          <br>
+          <p>&nbsp;&nbsp;<span class="code-var">open_for_collaboration</span> = <span class="code-bool">True</span></p>
+          <p>&nbsp;&nbsp;<span class="code-var">learning_in_public</span> = <span class="code-bool">True</span></p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       2. About Section
+       ========================================================================== -->
+  <section class="section" id="about">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-tag">01 / Background</span>
+        <h2 class="section-title">About My Journey</h2>
+        <p class="section-subtitle">
+          A genuine look at where I am today and the principles guiding my technical development.
+        </p>
+      </div>
+
+      <div class="about-grid">
+        
+        <!-- Left: Personal Story -->
+        <div class="about-text">
+          <p>
+            I am a prospective <span class="about-highlight">Bachelor of Technology (B.Tech) Artificial Intelligence</span> student. 
+            My goal is to develop into a well-rounded <strong>Machine Learning Engineer and Software Developer</strong> 
+            capable of designing reliable algorithms and deploying resilient production systems.
+          </p>
+          <p>
+            Rather than jumping straight into high-level AI abstractions and wrapper scripts, I believe in taking the time 
+            to understand the <strong>mathematical intuition</strong>, <strong>memory models</strong>, and 
+            <strong>algorithmic foundations</strong> that power modern intelligent computing.
+          </p>
+          <p>
+            I am early in my engineering trajectory, and I am treating this phase as a deliberate period of apprenticeship: 
+            writing code daily, reading technical papers, solving algorithmic challenges, and building projects from the ground up.
+          </p>
+        </div>
+
+        <!-- Right: Core Philosophy Cards -->
+        <div class="about-pillars">
+          
+          <div class="pillar-card">
+            <div class="pillar-icon-box">
+              <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+            </div>
+            <div>
+              <h3 class="pillar-title">Strong Foundations First</h3>
+              <p class="pillar-desc">
+                Prioritizing deep mastery of Data Structures, Object-Oriented design, Linear Algebra, and Calculus before relying on black-box libraries.
+              </p>
+            </div>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-icon-box">
+              <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+            </div>
+            <div>
+              <h3 class="pillar-title">Learn by Building</h3>
+              <p class="pillar-desc">
+                Translating theoretical concepts into runnable prototypes, profiling performance, and learning from compiler errors and debugging sessions.
+              </p>
+            </div>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-icon-box">
+              <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+            </div>
+            <div>
+              <h3 class="pillar-title">Learning in Public</h3>
+              <p class="pillar-desc">
+                Documenting insights, architectural decisions, and field notes transparently as competencies expand over time.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       3. Skills & Learning Roadmap Section
+       ========================================================================== -->
+  <section class="section" id="skills">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-tag">02 / Competencies</span>
+        <h2 class="section-title">Evolving Skills &amp; Learning Tree</h2>
+        <p class="section-subtitle">
+          An honest, structured overview of core foundations, active learning topics, and future milestones.
+        </p>
+      </div>
+
+      <div class="roadmap-container">
+        
+        <!-- Tier 1: Core Foundations -->
+        <div class="tier-card">
+          <div class="tier-header">
+            <div class="tier-title-group">
+              <span class="tier-number">Tier 01</span>
+              <h3 class="tier-title">Core Foundations</h3>
+            </div>
+            <span class="tier-badge badge-active">
+              <span class="status-dot"></span>
+              Actively Practicing &amp; Solidifying
+            </span>
+          </div>
+
+          <div class="skills-grid">
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Python</span>
+                <span class="skill-status-tag">Primary</span>
+              </div>
+              <p class="skill-desc">Object-oriented programming, clean scripting, typing, virtual environments, and idiomatic practices.</p>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">C / C++</span>
+                <span class="skill-status-tag">Foundational</span>
+              </div>
+              <p class="skill-desc">Memory layout, pointers, manual memory management, and implementing data structures from scratch.</p>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Data Structures &amp; Algorithms</span>
+                <span class="skill-status-tag">Daily Focus</span>
+              </div>
+              <p class="skill-desc">Arrays, linked lists, trees, graphs, sorting algorithms, time &amp; space complexity analysis (Big-O).</p>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Applied Mathematics</span>
+                <span class="skill-status-tag">Core Theory</span>
+              </div>
+              <p class="skill-desc">Linear algebra (matrix operations, eigenvalues), multivariable calculus, and discrete probability.</p>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Git &amp; GitHub</span>
+                <span class="skill-status-tag">Tooling</span>
+              </div>
+              <p class="skill-desc">Version control workflows, branch management, collaborative PRs, and repository hygiene.</p>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Linux &amp; Command Line</span>
+                <span class="skill-status-tag">Environment</span>
+              </div>
+              <p class="skill-desc">Shell scripting, process inspection, file permissions, and developer workflow automation.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tier 2: Currently Learning -->
+        <div class="tier-card">
+          <div class="tier-header">
+            <div class="tier-title-group">
+              <span class="tier-number">Tier 02</span>
+              <h3 class="tier-title">Applied ML &amp; Software Layer</h3>
+            </div>
+            <span class="tier-badge badge-learning">
+              <svg width="12" height="12" fill="currentColor" viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+              Currently Building &amp; Experimenting
+            </span>
+          </div>
+
+          <div class="skills-grid">
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">NumPy &amp; Pandas</span>
+                <span class="skill-status-tag">Data Prep</span>
+              </div>
+              <p class="skill-desc">Vectorized computations, matrix transformations, feature engineering, and exploratory data analysis.</p>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Scikit-Learn</span>
+                <span class="skill-status-tag">ML Pipelines</span>
+              </div>
+              <p class="skill-desc">Regression, classification models, cross-validation strategies, and preprocessing pipelines.</p>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">PyTorch</span>
+                <span class="skill-status-tag">Deep Learning</span>
+              </div>
+              <p class="skill-desc">Understanding autograd, tensor operations, neural network modules, and loss optimization loops.</p>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">FastAPI &amp; REST</span>
+                <span class="skill-status-tag">Serving</span>
+              </div>
+              <p class="skill-desc">Building lightweight asynchronous API endpoints to serve machine learning models and handle JSON payloads.</p>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">SQL &amp; Relational DBs</span>
+                <span class="skill-status-tag">Data Storage</span>
+              </div>
+              <p class="skill-desc">Querying structured schemas, table joins, aggregations, and database normalization concepts.</p>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Web Basics (HTML/CSS/JS)</span>
+                <span class="skill-status-tag">Front-End</span>
+              </div>
+              <p class="skill-desc">Creating clean, accessible interactive interfaces for demos, data visualizers, and tool interfaces.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tier 3: Future Horizons -->
+        <div class="tier-card">
+          <div class="tier-header">
+            <div class="tier-title-group">
+              <span class="tier-number">Tier 03</span>
+              <h3 class="tier-title">Future Horizons</h3>
+            </div>
+            <span class="tier-badge badge-planned">
+              <svg width="12" height="12" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle></svg>
+              Upcoming Milestones
+            </span>
+          </div>
+
+          <div class="skills-grid">
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">MLOps &amp; Docker</span>
+                <span class="skill-status-tag">Deployment</span>
+              </div>
+              <p class="skill-desc">Containerizing inference servers, reproducible model packaging, CI/CD pipelines, and MLflow tracking.</p>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Transformer Architectures</span>
+                <span class="skill-status-tag">NLP / LLMs</span>
+              </div>
+              <p class="skill-desc">Deep dive into self-attention mechanisms, tokenization, model fine-tuning, and retrieval-augmented generation.</p>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Distributed Computing</span>
+                <span class="skill-status-tag">Scale</span>
+              </div>
+              <p class="skill-desc">Understanding multi-GPU training paradigms, data parallelism, and asynchronous compute graphs.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       4. Planned & In-Progress Projects
+       ========================================================================== -->
+  <section class="section" id="projects">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-tag">03 / Blueprints &amp; Work</span>
+        <h2 class="section-title">Project Blueprints</h2>
+        <p class="section-subtitle">
+          Instead of empty boxes, here are the architectural specifications and projects currently under active development.
+        </p>
+      </div>
+
+      <div class="projects-grid">
+        
+        <!-- Project 1 Card -->
+        <article class="project-card">
+          <div class="project-card-header">
+            <span class="project-blueprint-badge">Spec #01</span>
+            <span class="project-status">
+              <span class="status-dot"></span> In Development
+            </span>
+          </div>
+
+          <div class="project-body">
+            <h3 class="project-title">End-to-End ML Prediction Service</h3>
+            <p class="project-summary">
+              A modular machine learning service designed with end-to-end data pipelines, automated feature scaling, model training, and REST API deployment.
+            </p>
+
+            <div class="project-spec-box">
+              <div class="spec-title">Architecture Highlights</div>
+              <ul class="spec-list">
+                <li>Automated data cleaning &amp; outlier handling via Pandas/Scikit-Learn</li>
+                <li>Asynchronous FastAPI endpoint with Pydantic request validation</li>
+                <li>Docker container for reproducible cross-platform execution</li>
+                <li>Unit test coverage for preprocessing logic via Pytest</li>
+              </ul>
+            </div>
+
+            <div class="project-tech-tags">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Scikit-Learn</span>
+              <span class="tech-tag">FastAPI</span>
+              <span class="tech-tag">Docker</span>
+              <span class="tech-tag">Pytest</span>
+            </div>
+          </div>
+
+          <div class="project-footer">
+            <span class="project-status">Phase: Pipeline &amp; Data Analysis</span>
+            <!-- EDIT: Update repository link when created -->
+            <a href="https://github.com" target="_blank" rel="noopener" class="btn btn-outline btn-sm">
+              <span>Repo Spec</span>
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 2 Card -->
+        <article class="project-card">
+          <div class="project-card-header">
+            <span class="project-blueprint-badge">Spec #02</span>
+            <span class="project-status">
+              <span class="status-dot" style="background: var(--accent-amber); box-shadow: 0 0 10px var(--accent-amber);"></span> Architecture Phase
+            </span>
+          </div>
+
+          <div class="project-body">
+            <h3 class="project-title">Vision / NLP Classification &amp; Web Demo</h3>
+            <p class="project-summary">
+              A transfer learning classifier deployed with an interactive browser interface allowing users to test inference on real-time inputs.
+            </p>
+
+            <div class="project-spec-box">
+              <div class="spec-title">Architecture Highlights</div>
+              <ul class="spec-list">
+                <li>Fine-tuning pretrained convolutional/transformer architectures</li>
+                <li>Exporting model weights using ONNX / PyTorch TorchScript</li>
+                <li>Interactive client interface for live image/text upload</li>
+                <li>Classification confidence score breakdown &amp; heatmaps</li>
+              </ul>
+            </div>
+
+            <div class="project-tech-tags">
+              <span class="tech-tag">PyTorch</span>
+              <span class="tech-tag">HuggingFace</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">FastAPI</span>
+            </div>
+          </div>
+
+          <div class="project-footer">
+            <span class="project-status">Phase: Dataset Curation &amp; Modeling</span>
+            <!-- EDIT: Update repository link when created -->
+            <a href="https://github.com" target="_blank" rel="noopener" class="btn btn-outline btn-sm">
+              <span>Repo Spec</span>
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 3 Card -->
+        <article class="project-card">
+          <div class="project-card-header">
+            <span class="project-blueprint-badge">Spec #03</span>
+            <span class="project-status">
+              <span class="status-dot" style="background: var(--accent-secondary); box-shadow: 0 0 10px var(--accent-secondary);"></span> Prototyping
+            </span>
+          </div>
+
+          <div class="project-body">
+            <h3 class="project-title">Algorithm &amp; Graph Visualizer CLI</h3>
+            <p class="project-summary">
+              A high-performance command-line tool and visual tracer for exploring pathfinding algorithms (Dijkstra, A*, BFS/DFS) and dynamic programming states.
+            </p>
+
+            <div class="project-spec-box">
+              <div class="spec-title">Architecture Highlights</div>
+              <ul class="spec-list">
+                <li>Core data structures implemented in modern C++ / Python</li>
+                <li>Step-by-step terminal animation of frontier and visited nodes</li>
+                <li>Memory and time complexity comparative benchmarks</li>
+                <li>Custom grid map generator and maze solver support</li>
+              </ul>
+            </div>
+
+            <div class="project-tech-tags">
+              <span class="tech-tag">C++ / Python</span>
+              <span class="tech-tag">Algorithms</span>
+              <span class="tech-tag">Data Structures</span>
+              <span class="tech-tag">CLI</span>
+            </div>
+          </div>
+
+          <div class="project-footer">
+            <span class="project-status">Phase: Core Algorithm Engine</span>
+            <!-- EDIT: Update repository link when created -->
+            <a href="https://github.com" target="_blank" rel="noopener" class="btn btn-outline btn-sm">
+              <span>Repo Spec</span>
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </a>
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       5. Blog / Notes / Field Notes Section
+       ========================================================================== -->
+  <section class="section" id="notes">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-tag">04 / Writing</span>
+        <h2 class="section-title">Field Notes &amp; Learning in Public</h2>
+        <p class="section-subtitle">
+          Documenting lessons learned, mathematical breakdowns, and software experiments.
+        </p>
+      </div>
+
+      <div class="notes-grid">
+        
+        <!-- Note 1 -->
+        <article class="note-card">
+          <div class="note-meta">
+            <span class="note-tag">Optimization &amp; Math</span>
+            <span>&bull; 5 min read</span>
+          </div>
+          <h3 class="note-title">Deconstructing Gradient Descent: The Calculus &amp; Code Behind It</h3>
+          <p class="note-excerpt">
+            A step-by-step breakdown of partial derivatives, learning rates, momentum, and implementing numerical optimization from pure Python.
+          </p>
+          <div class="note-footer">
+            <span>Coming Soon</span>
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </div>
+        </article>
+
+        <!-- Note 2 -->
+        <article class="note-card">
+          <div class="note-meta">
+            <span class="note-tag">Software Engineering</span>
+            <span>&bull; 4 min read</span>
+          </div>
+          <h3 class="note-title">Why Strong C++ and DSA Make You a Better ML Engineer</h3>
+          <p class="note-excerpt">
+            How understanding pointers, contiguous memory allocation, and algorithmic complexity transforms how you write and optimize deep learning code.
+          </p>
+          <div class="note-footer">
+            <span>Coming Soon</span>
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </div>
+        </article>
+
+        <!-- Note 3 -->
+        <article class="note-card">
+          <div class="note-meta">
+            <span class="note-tag">Tooling &amp; Workflow</span>
+            <span>&bull; 6 min read</span>
+          </div>
+          <h3 class="note-title">Setting Up a Clean, Reproducible Python ML Dev Environment</h3>
+          <p class="note-excerpt">
+            My curated checklist for managing virtual environments, linters, pre-commit hooks, and GPU configuration on Linux.
+          </p>
+          <div class="note-footer">
+            <span>Coming Soon</span>
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       6. Contact & Resume Section (Front & Center Visibility)
+       ========================================================================== -->
+  <section class="section" id="contact">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-tag">05 / Connect</span>
+        <h2 class="section-title">Let's Connect &amp; Collaborate</h2>
+        <p class="section-subtitle">
+          Open to technical discussions, study collaborations, open-source projects, and future internship opportunities.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        
+        <!-- Left: Direct Info & Social Cards -->
+        <div class="contact-card-main">
+          <h3>Reach Out Directly</h3>
+          <p>
+            Feel free to email me directly or connect through LinkedIn and GitHub. I reply promptly to genuine messages!
+          </p>
+
+          <!-- Direct Email Box with 1-Click Copy -->
+          <div class="contact-direct-box">
+            <div>
+              <div class="direct-email-label">Email Address</div>
+              <!-- EDIT: Replace with your actual email address -->
+              <div class="direct-email-value" id="email-address-text">darshanshres21@example.com</div>
+            </div>
+            <button class="copy-btn" id="copy-email-btn" title="Copy Email to Clipboard">
+              <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+              <span>Copy</span>
+            </button>
+          </div>
+
+          <!-- Social Links Matrix -->
+          <div class="social-grid">
+            
+            <a href="https://github.com" target="_blank" rel="noopener" class="social-card">
+              <div class="social-card-icon">
+                <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              </div>
+              <div>
+                <div class="social-card-title">GitHub</div>
+                <div class="social-card-handle">@darshanshres</div>
+              </div>
+            </a>
+
+            <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-card">
+              <div class="social-card-icon">
+                <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              </div>
+              <div>
+                <div class="social-card-title">LinkedIn</div>
+                <div class="social-card-handle">in/darshan shrestha</div>
+              </div>
+            </a>
+
+          </div>
+
+          <!-- Resume Callout Action -->
+          <div style="padding-top: 1rem; border-top: 1px solid var(--border-subtle); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem;">
+            <div>
+              <strong style="display: block; font-size: 0.95rem;">Looking for my CV / Resume?</strong>
+              <span style="font-size: 0.825rem; color: var(--text-muted);">View ATS-friendly printable format</span>
+            </div>
+            <a href="resume.html" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+              <span>View &amp; Print Resume</span>
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Right: Fast Contact Form -->
+        <div class="contact-form-card">
+          <h3 style="font-family: var(--font-heading); font-size: 1.35rem; font-weight: 700; margin-bottom: 0.5rem;">Send a Quick Message</h3>
+          <p style="color: var(--text-secondary); font-size: 0.875rem; margin-bottom: 1.5rem;">
+            Fill in your details below and it will compose a direct email message to me.
+          </p>
+
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="form-name" class="form-label">Your Name</label>
+              <input type="text" id="form-name" class="form-input" placeholder="e.g. Alex Smith" required>
+            </div>
+
+            <div class="form-group">
+              <label for="form-email" class="form-label">Your Email</label>
+              <input type="email" id="form-email" class="form-input" placeholder="e.g. alex@example.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="form-subject" class="form-label">Subject</label>
+              <input type="text" id="form-subject" class="form-input" placeholder="e.g. Collaboration / Project Idea">
+            </div>
+
+            <div class="form-group">
+              <label for="form-message" class="form-label">Message</label>
+              <textarea id="form-message" class="form-textarea" placeholder="Hello Darshan, I'd like to discuss..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              <span>Send Message</span>
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+            </button>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       7. Footer
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div>
+        <p>&copy; <span id="current-year">2026</span> Darshan. Built with clean HTML, CSS &amp; JavaScript.</p>
+        <p style="font-size: 0.775rem; margin-top: 0.25rem;">Hosted with zero external dependencies.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#hero">Back to top ↑</a>
+        <a href="resume.html" target="_blank" rel="noopener">Resume</a>
+        <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       Toast Notification Element
+       ========================================================================== -->
+  <div class="toast-notification" id="toast-notification" role="status" aria-live="polite">
+    <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+      <polyline points="22 4 12 14.01 9 11.01"></polyline>
+    </svg>
+    <span id="toast-message">Copied to clipboard!</span>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>

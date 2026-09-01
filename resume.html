@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Darshan — Resume / CV</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+      --text-dark: #0f172a;
+      --text-muted: #475569;
+      --border-color: #e2e8f0;
+      --accent: #4f46e5;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font-sans);
+      color: var(--text-dark);
+      background-color: #f1f5f9;
+      line-height: 1.5;
+      padding: 2rem 1rem;
+    }
+
+    .top-actions {
+      max-width: 800px;
+      margin: 0 auto 1.5rem auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .action-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 1rem;
+      background: #0f172a;
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 0.875rem;
+      font-weight: 600;
+      cursor: pointer;
+      border: none;
+    }
+
+    .action-btn.secondary {
+      background: #ffffff;
+      color: #0f172a;
+      border: 1px solid var(--border-color);
+    }
+
+    .action-btn:hover {
+      opacity: 0.9;
+    }
+
+    .resume-sheet {
+      max-width: 800px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 3rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    /* Header */
+    .resume-header {
+      border-bottom: 2px solid var(--text-dark);
+      padding-bottom: 1.25rem;
+      margin-bottom: 1.75rem;
+    }
+
+    .resume-name {
+      font-size: 2.25rem;
+      font-weight: 800;
+      color: var(--text-dark);
+      letter-spacing: -0.02em;
+    }
+
+    .resume-title {
+      font-family: var(--font-mono);
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--accent);
+      margin-top: 0.25rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .resume-contacts {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.25rem;
+      font-size: 0.875rem;
+      color: var(--text-muted);
+    }
+
+    .resume-contacts a {
+      color: var(--text-dark);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .resume-contacts a:hover {
+      text-decoration: underline;
+    }
+
+    /* Sections */
+    .resume-section {
+      margin-bottom: 1.75rem;
+    }
+
+    .section-title {
+      font-size: 1rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-dark);
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 0.35rem;
+      margin-bottom: 0.85rem;
+    }
+
+    .entry {
+      margin-bottom: 1rem;
+    }
+
+    .entry-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 0.25rem;
+    }
+
+    .entry-title {
+      font-weight: 700;
+      font-size: 0.975rem;
+    }
+
+    .entry-subtitle {
+      font-weight: 500;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    .entry-date {
+      font-family: var(--font-mono);
+      font-size: 0.825rem;
+      color: var(--text-muted);
+    }
+
+    .entry-bullets {
+      list-style-type: square;
+      padding-left: 1.25rem;
+      font-size: 0.875rem;
+      color: var(--text-dark);
+      line-height: 1.5;
+    }
+
+    .entry-bullets li {
+      margin-bottom: 0.3rem;
+    }
+
+    /* Skills Table */
+    .skills-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.875rem;
+    }
+
+    .skills-table td {
+      padding: 0.4rem 0;
+      vertical-align: top;
+    }
+
+    .skills-category {
+      font-weight: 700;
+      width: 25%;
+      color: var(--text-dark);
+    }
+
+    .skills-list {
+      color: var(--text-muted);
+    }
+
+    /* Print Styles */
+    @media print {
+      body {
+        background: #ffffff;
+        padding: 0;
+      }
+
+      .top-actions {
+        display: none !important;
+      }
+
+      .resume-sheet {
+        padding: 0;
+        box-shadow: none;
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Action Bar (Hidden during print) -->
+  <div class="top-actions">
+    <a href="index.html" class="action-btn secondary">← Back to Portfolio</a>
+    <button onclick="window.print()" class="action-btn">
+      <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path d="M6 9V2h12v7M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+        <path d="M6 14h12v8H6z"></path>
+      </svg>
+      Print / Save as PDF
+    </button>
+  </div>
+
+  <!-- Main Printable Resume Sheet -->
+  <main class="resume-sheet">
+    
+    <header class="resume-header">
+      <!-- EDIT: Change your name here -->
+      <h1 class="resume-name">Darshan</h1>
+      <div class="resume-title">Aspiring ML Engineer & Software Developer | Prospective B.Tech AI Student</div>
+      
+      <div class="resume-contacts">
+        <!-- EDIT: Update your contact links -->
+        <span>Email: <a href="mailto:darshan@example.com">darshan@example.com</a></span>
+        <span>GitHub: <a href="https://github.com" target="_blank" rel="noopener">github.com/darshan</a></span>
+        <span>LinkedIn: <a href="https://linkedin.com" target="_blank" rel="noopener">linkedin.com/in/darshan</a></span>
+        <span>Portfolio: <a href="index.html">darshan.dev</a></span>
+      </div>
+    </header>
+
+    <!-- Education Section -->
+    <section class="resume-section">
+      <h2 class="section-title">Education</h2>
+      <div class="entry">
+        <div class="entry-header">
+          <div>
+            <span class="entry-title">Bachelor of Technology (B.Tech) in Artificial Intelligence</span>
+            <div class="entry-subtitle">Prospective / Incoming Undergraduate Student</div>
+          </div>
+          <span class="entry-date">Expected 2026 – 2030</span>
+        </div>
+        <ul class="entry-bullets">
+          <li><strong>Academic Focus:</strong> Machine Learning, Data Structures & Algorithms, Systems Programming, Applied Linear Algebra, Probability & Statistics.</li>
+          <li><strong>Objective:</strong> Pursuing rigorous technical foundations to design scalable machine learning systems and production software.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Technical Competencies -->
+    <section class="resume-section">
+      <h2 class="section-title">Technical Competencies & Learning Roadmap</h2>
+      <table class="skills-table">
+        <tr>
+          <td class="skills-category">Core Languages</td>
+          <td class="skills-list">Python (Object-Oriented, Scripting), C/C++ (Foundational Memory & Data Structures), Modern JavaScript (ES6+), SQL</td>
+        </tr>
+        <tr>
+          <td class="skills-category">Machine Learning & Data</td>
+          <td class="skills-list">NumPy, Pandas, Matplotlib, Scikit-Learn (Pipelines, Regression, Classification), PyTorch (In-Progress)</td>
+        </tr>
+        <tr>
+          <td class="skills-category">Software Engineering</td>
+          <td class="skills-list">Git, GitHub Version Control, Linux/Unix Shell, RESTful APIs (FastAPI/Flask basics), Data Structures & Algorithms</td>
+        </tr>
+        <tr>
+          <td class="skills-category">Core Math Foundations</td>
+          <td class="skills-list">Multivariable Calculus, Linear Algebra (Vector spaces, Matrix decompositions), Discrete Mathematics, Probability</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- Planned & Prototyped Projects -->
+    <section class="resume-section">
+      <h2 class="section-title">Technical Projects & System Blueprints</h2>
+
+      <div class="entry">
+        <div class="entry-header">
+          <div>
+            <span class="entry-title">End-to-End ML Prediction Service</span>
+            <span class="entry-subtitle"> | Python, Scikit-Learn, FastAPI, Docker</span>
+          </div>
+          <span class="entry-date">In Progress / Pipeline Phase</span>
+        </div>
+        <ul class="entry-bullets">
+          <li>Architecting an end-to-end regression and classification service with structured data preprocessing pipelines.</li>
+          <li>Designing lightweight REST API endpoints using FastAPI for real-time inference handling.</li>
+          <li>Focusing on clean modular code, automated validation tests, and reproducible container packaging.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <div>
+            <span class="entry-title">Algorithm & Graph Visualizer Tool</span>
+            <span class="entry-subtitle"> | C++, Python, Data Structures</span>
+          </div>
+          <span class="entry-date">Prototyping Phase</span>
+        </div>
+        <ul class="entry-bullets">
+          <li>Building an interactive tool to trace and visualize graph search heuristics (Dijkstra, A*, BFS/DFS) and dynamic programming states.</li>
+          <li>Analyzing computational complexity, memory usage, and edge-case behaviors across diverse input datasets.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Continuous Learning & Initiatives -->
+    <section class="resume-section">
+      <h2 class="section-title">Continuous Learning & Technical Writing</h2>
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-title">Learning in Public — Field Notes & Technical Articles</span>
+          <span class="entry-date">Ongoing</span>
+        </div>
+        <ul class="entry-bullets">
+          <li>Authoring technical breakdown notes on optimization algorithms (gradient descent, backpropagation mathematics).</li>
+          <li>Documenting daily problem-solving logs on LeetCode/Codeforces covering data structures, sorting algorithms, and recursion.</li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>
